@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soluções e Produtos Digitais | CONECTCORP</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #020408;
+            color: #F8FAFC;
+        }
+        h1, h2, h3, h4, .font-heading {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .bg-brand-dark {
+            background-color: #040811;
+        }
+        .premium-blur {
+            backdrop-filter: blur(12px);
+            background-color: rgba(2, 4, 8, 0.8);
+        }
+        .glow-emerald {
+            box-shadow: 0 0 50px -10px rgba(16, 185, 129, 0.12);
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden antialiased">
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="fixed top-0 left-0 w-full z-50 premium-blur border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
+            <a href="index.html" class="flex items-center group select-none">
+                <img src="CONECTCORP branco.png" alt="CONECTCORP" class="h-9 sm:h-11 object-contain">
+            </a>
+            
+            <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="index.html#sobre" class="hover:text-white transition-colors">Sobre</a>
+                <a href="index.html#atuacao" class="hover:text-emerald-400 transition-colors">Atuação</a>
+                <a href="index.html#diferenciais" class="hover:text-white transition-colors">Diferenciais</a>
+                <a href="index.html#portfolio" class="text-emerald-400 transition-colors">Cases</a>
+                <a href="index.html#amazonia" class="hover:text-emerald-400 transition-colors">Amazônia Moderna</a>
+            </nav>
+
+            <div class="sm:flex items-center gap-5">
+                <a href="index.html" class="text-sm font-medium text-slate-400 hover:text-white transition-colors">Voltar para Home</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO DA PÁGINA DE SOLUÇÕES -->
+    <section class="pt-44 pb-16 bg-gradient-to-b from-brand-dark/40 to-transparent">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-3xl space-y-4">
+                <p class="text-xs font-semibold tracking-widest text-emerald-400 uppercase">Hub de Inovação Analítica</p>
+                <h1 class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight">Nossos Produtos & Soluções</h1>
+                <p class="text-slate-400 text-sm sm:text-base font-light leading-relaxed">
+                    Explore os ecossistemas estruturados e plataformas nativas desenvolvidas para otimizar governança, performance de mercado e escalabilidade de dados.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- GRID DAS SOLUÇÕES (4 Existentes + 4 Placeholders) -->
+    <section class="pb-32">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                
+                <!-- 1. Atlas Gov -->
+                <div id="atlas-gov" class="p-8 rounded bg-brand-dark border border-white/5 flex flex-col justify-between space-y-6 hover:border-emerald-500/20 transition-all duration-300">
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-start">
+                            <span class="font-heading font-extrabold text-xl tracking-wider text-emerald-400">ATLAS <span class="text-white">GOV</span></span>
+                            <div class="px-2 py-0.5 rounded bg-emerald-950/50 text-emerald-400 font-mono text-[9px] uppercase tracking-wider">GovTech & BI</div>
+                        </div>
+                        <p class="text-sm text-slate-300 font-light leading-relaxed">
+                            Dashboard inteligente voltado para monitoramento preditivo e inteligência analítica em governança e gestão eficiente. Desenvolvido para unificar grandes volumes de dados públicos e gerar relatórios de conformidade em tempo real.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-white/5 flex items-center justify-between text-xs">
+                        <span class="text-slate-400"><i class="fa-solid fa-square-poll-vertical text-emerald-400 mr-1.5"></i> Status: Ativo / Implantado</span>
+                        <a href="https://wa.me/#" target="_blank" class="text-white font-medium hover:text-emerald-400 transition-colors">Solicitar Demonstração →</a>
+                    </div>
+                </div>
+
+                <!-- 2. SYS.HUB -->
+                <div id="sys-hub" class="p-8 rounded bg-brand-dark border border-white/5 flex flex-col justify-between space-y-6 hover:border-emerald-500/20 transition-all duration-300">
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-start">
+                            <span class="font-heading font-black text-xl tracking-tight text-white">SYS<span class="text-emerald-400">.HUB</span></span>
+                            <div class="px-2 py-0.5 rounded bg-slate-900 text-slate-300 font-mono text-[9px] uppercase tracking-wider">SaaS & CRM</div>
+                        </div>
+                        <p class="text-sm text-slate-300 font-light leading-relaxed">
+                            Solução integrada para automação de processos internos, funil de prospecção comercial avançado e controle tático de canais corporativos multicanais. Centraliza a comunicação e melhora a eficiência do time de vendas.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-white/5 flex items-center justify-between text-xs">
+                        <span class="text-slate-400"><i class="fa-solid fa-cube text-emerald-400 mr-1.5"></i> Status: Ativo / Solução SaaS</span>
+                        <a href="https://wa.me/#" target="_blank" class="text-white font-medium hover:text-emerald-400 transition-colors">Solicitar Demonstração →</a>
+                    </div>
+                </div>
+
+                <!-- 3. Gov3 -->
+                <div id="gov3" class="p-8 rounded bg-brand-dark border border-white/5 flex flex-col justify-between space-y-6 hover:border-emerald-500/20 transition-all duration-300">
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-start">
+                            <span class="font-heading font-light text-xl tracking-widest text-slate-300">GOV<span class="font-bold text-emerald-400">3</span></span>
+                            <div class="px-2 py-0.5 rounded bg-slate-900 text-slate-400 font-mono text-[9px] uppercase tracking-wider">Estratégia Legal</div>
+                        </div>
+                        <p class="text-sm text-slate-300 font-light leading-relaxed">
+                            Programa especializado em relações institucionais éticas e estruturação de projetos customizados junto ao Terceiro Setor. Garante total conformidade jurídica e viabilidade técnica para captações complexas de recursos.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-white/5 flex items-center justify-between text-xs">
+                        <span class="text-slate-400"><i class="fa-solid fa-shield-halved text-emerald-400 mr-1.5"></i> Status: Ativo / Consultoria</span>
+                        <a href="https://wa.me/#" target="_blank" class="text-white font-medium hover:text-emerald-400 transition-colors">Solicitar Demonstração →</a>
+                    </div>
+                </div>
+
+                <!-- 4. Atlas Business -->
+                <div id="atlas-business" class="p-8 rounded bg-brand-dark border border-white/5 flex flex-col justify-between space-y-6 hover:border-emerald-500/20 transition-all duration-300">
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-start">
+                            <span class="font-heading font-medium text-lg tracking-tight text-white">ATLAS <span class="text-emerald-400 font-extrabold">BUSINESS</span></span>
+                            <div class="px-2 py-0.5 rounded bg-emerald-950/40 text-emerald-400 font-mono text-[9px] uppercase tracking-wider">Inteligência Competitiva</div>
+                        </div>
+                        <p class="text-sm text-slate-300 font-light leading-relaxed">
+                            Ambiente avançado de Big Data voltado para extração de tendências corporativas de consumo, mapeamento analítico de nichos de mercado e monitoramento preditivo macroeconômico de concorrentes.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-white/5 flex items-center justify-between">
+                        <span class="text-xs text-slate-400"><i class="fa-solid fa-chart-pie text-emerald-400 mr-1.5"></i> Status: Ativo / Big Data</span>
+                        <a href="https://wa.me/#" target="_blank" class="text-xs text-white font-medium hover:text-emerald-400 transition-colors">Solicitar Demonstração →</a>
+                    </div>
+                </div>
+
+                <!-- 5. Slot Reserva 01 -->
+                <div class="p-8 rounded bg-brand-dark/40 border border-white/5 border-dashed flex flex-col justify-between space-y-6">
+                    <div class="space-y-4 opacity-40">
+                        <div class="flex justify-between items-start">
+                            <span class="font-heading font-bold text-lg text-white uppercase tracking-wider">Nova Solução 05</span>
+                            <div class="px-2 py-0.5 rounded bg-slate-900 text-slate-500 font-mono text-[9px] uppercase tracking-wider">Categoria</div>
+                        </div>
+                        <p class="text-sm text-slate-400 font-light leading-relaxed">
+                            Espaço reservado para a descrição detalhada da sua quinta solução corporativa. Você pode editar este texto e título diretamente no arquivo HTML quando desejar lançar um novo produto.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-white/5 text-xs text-slate-600">
+                        <span><i class="fa-solid fa-lock mr-1.5"></i> Espaço disponível para expansão</span>
+                    </div>
+                </div>
+
+                <!-- 6. Slot Reserva 02 -->
+                <div class="p-8 rounded bg-brand-dark/40 border border-white/5 border-dashed flex flex-col justify-between space-y-6">
+                    <div class="space-y-4 opacity-40">
+                        <div class="flex justify-between items-start">
+                            <span class="font-heading font-bold text-lg text-white uppercase tracking-wider">Nova Solução 06</span>
+                            <div class="px-2 py-0.5 rounded bg-slate-900 text-slate-500 font-mono text-[9px] uppercase tracking-wider">Categoria</div>
+                        </div>
+                        <p class="text-sm text-slate-400 font-light leading-relaxed">
+                            Espaço reservado para a descrição detalhada da sua sexta solução corporativa. Você pode editar este texto e título diretamente no arquivo HTML quando desejar lançar um novo produto.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-white/5 text-xs text-slate-600">
+                        <span><i class="fa-solid fa-lock mr-1.5"></i> Espaço disponível para expansão</span>
+                    </div>
+                </div>
+
+                <!-- 7. Slot Reserva 03 -->
+                <div class="p-8 rounded bg-brand-dark/40 border border-white/5 border-dashed flex flex-col justify-between space-y-6">
+                    <div class="space-y-4 opacity-40">
+                        <div class="flex justify-between items-start">
+                            <span class="font-heading font-bold text-lg text-white uppercase tracking-wider">Nova Solução 07</span>
+                            <div class="px-2 py-0.5 rounded bg-slate-900 text-slate-500 font-mono text-[9px] uppercase tracking-wider">Categoria</div>
+                        </div>
+                        <p class="text-sm text-slate-400 font-light leading-relaxed">
+                            Espaço reservado para a descrição detalhada da sua sétima solução corporativa. Você pode editar este texto e título diretamente no arquivo HTML quando desejar lançar um novo produto.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-white/5 text-xs text-slate-600">
+                        <span><i class="fa-solid fa-lock mr-1.5"></i> Espaço disponível para expansão</span>
+                    </div>
+                </div>
+
+                <!-- 8. Slot Reserva 04 -->
+                <div class="p-8 rounded bg-brand-dark/40 border border-white/5 border-dashed flex flex-col justify-between space-y-6">
+                    <div class="space-y-4 opacity-40">
+                        <div class="flex justify-between items-start">
+                            <span class="font-heading font-bold text-lg text-white uppercase tracking-wider">Nova Solução 08</span>
+                            <div class="px-2 py-0.5 rounded bg-slate-900 text-slate-500 font-mono text-[9px] uppercase tracking-wider">Categoria</div>
+                        </div>
+                        <p class="text-sm text-slate-400 font-light leading-relaxed">
+                            Espaço reservado para a descrição detalhada da sua oitava solução corporativa. Você pode editar este texto e título diretamente no arquivo HTML quando desejar lançar um novo produto.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-white/5 text-xs text-slate-600">
+                        <span><i class="fa-solid fa-lock mr-1.5"></i> Espaço disponível para expansão</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ IDENTICO -->
+    <footer class="bg-[#010307] border-t border-white/5 pt-16 pb-8 text-xs text-slate-500 font-light">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-12 pb-12 border-b border-white/5">
+            <div class="md:col-span-4 space-y-5">
+                <div class="flex items-center select-none">
+                    <img src="CONECTCORP branco.png" alt="CONECTCORP" class="h-8 object-contain">
+                </div>
+                <p class="leading-relaxed max-w-xs text-slate-400">
+                    Inteligência competitiva, estruturação de projetos multidisciplinares e conexões mercadológicas voltadas para expansão corporativa e governança robusta.
+                </p>
+            </div>
+
+            <div class="md:col-span-2 space-y-3">
+                <span class="font-heading font-semibold text-white tracking-wider block text-[11px] uppercase">Soluções</span>
+                <ul class="space-y-2 text-slate-400">
+                    <li><a href="index.html#atuacao" class="hover:text-white transition-colors">Desenvolvimento</a></li>
+                    <li><a href="index.html#atuacao" class="hover:text-white transition-colors">Internacionalização</a></li>
+                    <li><a href="index.html#atuacao" class="hover:text-white transition-colors">BI & Analytics</a></li>
+                    <li><a href="index.html#atuacao" class="hover:text-white transition-colors">Produtos SaaS</a></li>
+                </ul>
+            </div>
+
+            <div class="md:col-span-2 space-y-3">
+                <span class="font-heading font-semibold text-white tracking-wider block text-[11px] uppercase">Corporativo</span>
+                <ul class="space-y-2 text-slate-400">
+                    <li><a href="index.html#sobre" class="hover:text-white transition-colors">Quem Somos</a></li>
+                    <li><a href="index.html#diferenciais" class="hover:text-white transition-colors">Diferenciais</a></li>
+                    <li><a href="index.html#portfolio" class="hover:text-white transition-colors">Cases de Sucesso</a></li>
+                    <li><a href="index.html#amazonia" class="hover:text-white transition-colors">Amazônia Moderna</a></li>
+                </ul>
+            </div>
+
+            <div class="md:col-span-4 space-y-3">
+                <span class="font-heading font-semibold text-white tracking-wider block text-[11px] uppercase">Sede & Contato</span>
+                <ul class="space-y-2 text-slate-400">
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-location-dot mt-0.5 text-emerald-400"></i>
+                        <span>Porto Velho – Rondônia – Brasil</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fa-regular fa-envelope text-white"></i>
+                        <span>contato@conectcorp.com.br</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px]">
+            <span>&copy; 2026 CONECTCORP. Todos os direitos reservados.</span>
+        </div>
+    </footer>
+
+</body>
+</html>
