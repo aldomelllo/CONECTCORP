@@ -39,6 +39,18 @@
         .animate-pulse-slow {
             animation: pulse-slow 8s infinite ease-in-out;
         }
+
+        /* Animação do Slide Infinito de Logos */
+        @keyframes marquee {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-100%); }
+        }
+        .animate-marquee {
+            animation: marquee 28s linear infinite;
+        }
+        .marquee-wrapper:hover .animate-marquee {
+            animation-play-state: paused;
+        }
     </style>
 </head>
 <body class="overflow-x-hidden antialiased selection:bg-emerald-800 selection:text-white">
@@ -101,7 +113,7 @@
         <div class="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
             <div class="lg:col-span-7 space-y-8">
                 <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900/80 border border-white/10 text-xs font-medium text-slate-300 uppercase tracking-widest">
-                    <span class="w-2 h-2 rounded-full bg-emerald-500"></span> Inteligência Estratégica & Engenharia de Software
+                    <span class="w-2 h-2 rounded-full bg-emerald-500"></span> Inteligência Estratégica & Geração de Receitas
                 </div>
                 
                 <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.1]">
@@ -138,7 +150,7 @@
                 </div>
             </div>
             
-            <!-- HUB ESTRATÉGICO CONECTCORP (INTERATIVO E CONTEXTUALIZADO) -->
+            <!-- HUB ESTRATÉGICO CONECTCORP -->
             <div class="lg:col-span-5 relative">
                 <div class="rounded-xl bg-brand-dark/90 border border-white/10 p-6 glow-emerald space-y-5 relative overflow-hidden">
                     <div class="absolute -top-20 -right-20 w-44 h-44 bg-emerald-500/10 rounded-full blur-2xl pointer-events-none"></div>
@@ -154,7 +166,7 @@
                         </span>
                     </div>
 
-                    <!-- Pilar 1: Link Direto para Criação de Sites & Software -->
+                    <!-- Pilar 1 -->
                     <a href="criacao-de-sites.html" class="block p-4 rounded-lg bg-slate-900/80 border border-emerald-500/25 hover:border-emerald-400 hover:bg-slate-900 transition-all group">
                         <div class="flex items-start justify-between gap-3">
                             <div class="flex items-start gap-3">
@@ -176,7 +188,7 @@
                         </div>
                     </a>
 
-                    <!-- Pilar 2: Inteligência de Mercado & BI -->
+                    <!-- Pilar 2 -->
                     <a href="#portfolio" class="block p-4 rounded-lg bg-slate-900/50 border border-white/5 hover:border-white/20 transition-all group">
                         <div class="flex items-start justify-between gap-3">
                             <div class="flex items-start gap-3">
@@ -194,7 +206,7 @@
                         </div>
                     </a>
 
-                    <!-- Pilar 3: Estruturação & Expansão Empresarial -->
+                    <!-- Pilar 3 -->
                     <a href="#atuacao" class="block p-4 rounded-lg bg-slate-900/50 border border-white/5 hover:border-white/20 transition-all group">
                         <div class="flex items-start justify-between gap-3">
                             <div class="flex items-start gap-3">
@@ -395,7 +407,7 @@
                     <a href="solucoes.html" class="text-xs text-emerald-400 hover:text-white font-medium transition-colors pt-2 block">Saiba mais →</a>
                 </div>
 
-                <!-- Card 6: Soluções Digitais, Sites e SaaS (Ligado à página de Criação de Sites) -->
+                <!-- Card 6: Soluções Digitais, Sites e SaaS -->
                 <div class="p-6 rounded bg-brand-dark/50 border border-emerald-500/20 hover:border-emerald-500/50 hover:bg-brand-dark group transition-all duration-300 flex flex-col justify-between">
                     <div>
                         <div class="w-12 h-12 flex items-center justify-center text-white border border-white/10 bg-slate-900 rounded mb-6 group-hover:bg-emerald-500 group-hover:text-black transition-all">
@@ -454,10 +466,10 @@
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Engenharia Web & Presença Digital
                     </span>
                     <h3 class="text-lg sm:text-xl font-bold text-white font-heading">
-                        Sua empresa precisa de um site profissional que vende 24h por dia.
+                        Sua empresa precisa de um site profissional que vende 24h por dia?
                     </h3>
                     <p class="text-xs text-slate-400 font-light leading-relaxed">
-                        Pare de perder vendas e conheça nossa divisão especializada em criação de sites de alta conversão integrados ao Google Meu Negócio e WhatsApp, sem mensalidade de aluguel.
+                        Conheça nossa divisão especializada em criação de sites de alta conversão integrados ao Google Meu Negócio e WhatsApp, sem mensalidade de aluguel.
                     </p>
                 </div>
                 <a href="criacao-de-sites.html" class="w-full md:w-auto shrink-0 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs uppercase tracking-wider px-6 py-4 rounded transition-all text-center flex items-center justify-center gap-2">
@@ -640,130 +652,44 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 6. SESSÃO DE CLIENTES (FÁCIL DE ADICIONAR NOVOS: LOGO, NOME, ESTADO, SETOR) -->
+    <!-- 6. SLIDE INFINITO DE CLIENTES (APENAS LOGOS RODANDO, SEM TEXTO)           -->
     <!-- ========================================================================= -->
-    <section id="clientes" class="py-24 bg-brand-dark/60 border-t border-b border-white/5 relative">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-4">
-                <div class="space-y-3">
-                    <p class="text-xs font-semibold tracking-widest text-emerald-400 uppercase flex items-center gap-2">
-                        <span class="w-8 h-[1px] bg-emerald-500 inline-block"></span> Carteira & Parceiros
-                    </p>
-                    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">
-                        Empresas & Clientes Atendidos
-                    </h2>
-                </div>
-                <span class="text-xs text-slate-400 max-w-xs font-light text-left md:text-right">
-                    Organizações, escritórios, clínicas e instituições que aceleram seus resultados com nossas soluções.
-                </span>
-            </div>
+    <section id="clientes" class="py-12 border-t border-b border-white/5 bg-brand-dark/20 relative overflow-hidden w-full marquee-wrapper">
+        <!-- Degradê lateral para suavizar a entrada e saída das logos -->
+        <div class="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#020408] to-transparent z-10 pointer-events-none"></div>
+        <div class="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#020408] to-transparent z-10 pointer-events-none"></div>
+        
+        <div class="flex overflow-hidden select-none w-full">
+            <!-- ADICIONE SUAS LOGOS APENAS AQUI DENTRO (O script no final duplica sozinho para o loop infinito) -->
+            <div id="logos-track" class="flex items-center gap-16 px-8 animate-marquee shrink-0 min-w-full justify-around">
+                
+                <img src="logoarke.png" alt="ARKE Energia" class="h-12 w-auto object-contain rounded opacity-85 hover:opacity-100 transition-opacity">
 
-            <!-- GRADE DE CLIENTES: Basta copiar e colar um bloco abaixo para adicionar um novo cliente -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Exemplos prontos: basta descomentar (tira e colocar o nome do arquivo da sua logo -->
+                                <img src="logomatheus.png" alt="Dr. Matheus" class="h-12 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity">
+                                <img src="logomagna.png" alt="Magna dos Anjos" class="h-12 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity">
+                                <img src="logoandre.png" alt="Pedrosa Advocacia" class="h-12 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity">
+                                <img src="logoafcr.png" alt="Faculdade Católica de Rondônia" class="h-12 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity">
+                                <img src="logoapreno.png" alt="APRENO" class="h-12 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity">
+                                 <img src="logoaascam.png" alt="AASCAM" class="h-12 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity">
+                                <img src="logoinapac.png" alt="INAPAC" class="h-12 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity">
+                                <img src="logopaepai.png" alt="PAEPAI" class="h-12 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity">
+                                <img src="logounir.png" alt="Universidade Federal de Rondônia - UNIR" class="h-12 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity">
+                                <img src="logohub.png" alt="HUB RO" class="h-12 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity">
+                                <img src="logogovro.png" alt="Governo do Estado de Rondônia" class="h-12 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity">
+                                <img src="logofapero.png" alt="Fundação de Amparo a Pesquisa de Rondônia" class="h-12 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity">
+                                 <img src="logojt.png" alt="JT Transportes" class="h-12 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity">
+                                <img src="logoibres.png" alt="Instituto Bombeiros de Responsabilidade" class="h-12 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity">
+                                 <img src="logoecotrace.png" alt="Ecotrace" class="h-12 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity">
+                                  <img src="logolettera.png" alt="Lettera Comunicação" class="h-12 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity">
+                                   <img src="logoroumie.png" alt="Roumiê Advocacia" class="h-12 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity">
+                                    <img src="logoadpvh.png" alt="Agência de Desenvolvimento de Porto Velho" class="h-12 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity">
+                                     <img src="logoarpv.png" alt="Agência Reguladora de Porto Velho" class="h-12 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity">
+                                      <img src="logomagoo.png" alt="Magoo Candles" class="h-12 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity">
+                                       <img src="logomasttermoto.png" alt="Mastter Moto" class="h-12 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity">
+                                        <img src="logoalphaclin.png" alt="AlphaClin" class="h-12 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity">
+                                         <img src="logoaunip.png" alt="Universidade Paulista" class="h-12 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity">
 
-                <!-- ==================== INÍCIO DO CLIENTE 01 ==================== -->
-                <div class="p-6 rounded-lg bg-slate-950/90 border border-white/5 hover:border-emerald-500/30 transition-all duration-300 flex flex-col justify-between space-y-5 group">
-                    <!-- ÁREA DA LOGO (Descomente a tag <img> abaixo e coloque o arquivo da logo) -->
-                    <div class="h-20 rounded bg-brand-dark border border-white/5 flex items-center justify-center p-4 overflow-hidden">
-                        <!-- <img src="logo-andre-pedrosa.png" alt="Logo André Pedrosa" class="max-h-12 object-contain"> -->
-                        <span class="font-heading font-extrabold text-sm tracking-widest text-slate-300 group-hover:text-emerald-400 transition-colors uppercase">
-                            PEDROSA ADVOGADOS
-                        </span>
-                    </div>
-                    <!-- DADOS DO CLIENTE: NOME, ESTADO E SETOR -->
-                    <div class="space-y-2.5">
-                        <h3 class="text-base font-bold text-white font-heading">André Pedrosa</h3>
-                        <div class="space-y-1.5 pt-2 border-t border-white/5 text-xs text-slate-400 font-light">
-                            <p class="flex items-center gap-2">
-                                <i class="fa-solid fa-location-dot text-emerald-400 w-3.5 text-center"></i>
-                                <span>Rondônia (RO)</span>
-                            </p>
-                            <p class="flex items-center gap-2">
-                                <i class="fa-solid fa-briefcase text-slate-500 w-3.5 text-center"></i>
-                                <span>Advocacia & Direito</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- ===================== FIM DO CLIENTE 01 ====================== -->
-
-                <!-- ==================== INÍCIO DO CLIENTE 02 ==================== -->
-                <div class="p-6 rounded-lg bg-slate-950/90 border border-white/5 hover:border-emerald-500/30 transition-all duration-300 flex flex-col justify-between space-y-5 group">
-                    <!-- ÁREA DA LOGO -->
-                    <div class="h-20 rounded bg-brand-dark border border-white/5 flex items-center justify-center p-4 overflow-hidden">
-                        <!-- <img src="logo-dr-matheus.png" alt="Logo Dr. Matheus QG" class="max-h-12 object-contain"> -->
-                        <span class="font-heading font-extrabold text-sm tracking-widest text-slate-300 group-hover:text-emerald-400 transition-colors uppercase">
-                            DR. MATHEUS QG
-                        </span>
-                    </div>
-                    <!-- DADOS DO CLIENTE: NOME, ESTADO E SETOR -->
-                    <div class="space-y-2.5">
-                        <h3 class="text-base font-bold text-white font-heading">Dr. Matheus Queiroz</h3>
-                        <div class="space-y-1.5 pt-2 border-t border-white/5 text-xs text-slate-400 font-light">
-                            <p class="flex items-center gap-2">
-                                <i class="fa-solid fa-location-dot text-emerald-400 w-3.5 text-center"></i>
-                                <span>Santa Catarina (SC)</span>
-                            </p>
-                            <p class="flex items-center gap-2">
-                                <i class="fa-solid fa-briefcase text-slate-500 w-3.5 text-center"></i>
-                                <span>Saúde & Medicina</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- ===================== FIM DO CLIENTE 02 ====================== -->
-
-                <!-- ==================== INÍCIO DO CLIENTE 03 ==================== -->
-                <div class="p-6 rounded-lg bg-slate-950/90 border border-white/5 hover:border-emerald-500/30 transition-all duration-300 flex flex-col justify-between space-y-5 group">
-                    <!-- ÁREA DA LOGO -->
-                    <div class="h-20 rounded bg-brand-dark border border-white/5 flex items-center justify-center p-4 overflow-hidden">
-                        <!-- <img src="logo-magna.png" alt="Logo Magna dos Anjos" class="max-h-12 object-contain"> -->
-                        <span class="font-heading font-extrabold text-sm tracking-widest text-slate-300 group-hover:text-emerald-400 transition-colors uppercase">
-                            MAGNA DOS ANJOS
-                        </span>
-                    </div>
-                    <!-- DADOS DO CLIENTE: NOME, ESTADO E SETOR -->
-                    <div class="space-y-2.5">
-                        <h3 class="text-base font-bold text-white font-heading">Magna dos Anjos</h3>
-                        <div class="space-y-1.5 pt-2 border-t border-white/5 text-xs text-slate-400 font-light">
-                            <p class="flex items-center gap-2">
-                                <i class="fa-solid fa-location-dot text-emerald-400 w-3.5 text-center"></i>
-                                <span>Rondônia (RO)</span>
-                            </p>
-                            <p class="flex items-center gap-2">
-                                <i class="fa-solid fa-briefcase text-slate-500 w-3.5 text-center"></i>
-                                <span>Gestão Pública & Política</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- ===================== FIM DO CLIENTE 03 ====================== -->
-
-                <!-- ==================== INÍCIO DO CLIENTE 04 ==================== -->
-                <div class="p-6 rounded-lg bg-slate-950/90 border border-white/5 hover:border-emerald-500/30 transition-all duration-300 flex flex-col justify-between space-y-5 group">
-                    <!-- ÁREA DA LOGO -->
-                    <div class="h-20 rounded bg-brand-dark border border-white/5 flex items-center justify-center p-4 overflow-hidden">
-                        <!-- <img src="logo-apreno.png" alt="Logo apreno" class="max-h-12 object-contain"> -->
-                        <span class="font-heading font-extrabold text-sm tracking-widest text-slate-300 group-hover:text-emerald-400 transition-colors">
-                            apreno
-                        </span>
-                    </div>
-                    <!-- DADOS DO CLIENTE: NOME, ESTADO E SETOR -->
-                    <div class="space-y-2.5">
-                        <h3 class="text-base font-bold text-white font-heading">apreno</h3>
-                        <div class="space-y-1.5 pt-2 border-t border-white/5 text-xs text-slate-400 font-light">
-                            <p class="flex items-center gap-2">
-                                <i class="fa-solid fa-location-dot text-emerald-400 w-3.5 text-center"></i>
-                                <span>Rondônia (RO)</span>
-                            </p>
-                            <p class="flex items-center gap-2">
-                                <i class="fa-solid fa-briefcase text-slate-500 w-3.5 text-center"></i>
-                                <span>Pesquisa, Energia & P&D</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- ===================== FIM DO CLIENTE 04 ====================== -->
 
             </div>
         </div>
@@ -949,6 +875,17 @@
             </div>
         </div>
     </footer>
+
+    <!-- Script automático para manter o loop contínuo das logos sem precisar duplicar o código manualmente -->
+    <script>
+        const logosTrack = document.getElementById('logos-track');
+        if (logosTrack) {
+            const clone = logosTrack.cloneNode(true);
+            clone.removeAttribute('id');
+            clone.setAttribute('aria-hidden', 'true');
+            logosTrack.parentElement.appendChild(clone);
+        }
+    </script>
 
 </body>
 </html>
